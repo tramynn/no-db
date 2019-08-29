@@ -65,6 +65,8 @@ const getQuizQuestions = (req, res) => {
     res.status(200).json(quizQuestions);
 }
 
+// const deleteQuizAnswers
+
 module.exports = {
     getQuizQuestions
 }
