@@ -1,5 +1,9 @@
 import React, { Component } from 'react';
 import './NavBar.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faSearch } from '@fortawesome/free-solid-svg-icons';
+
+const element = <FontAwesomeIcon icon={faSearch} />
 
 
 class NavBar extends Component {
@@ -23,7 +27,7 @@ class NavBar extends Component {
                             <li>Conflict Styles</li>
                             <li>Conflict Types</li>
                             <button className="Search-Button">
-                                
+                                {element}
                                 <li>Search</li>
                             </button>
                         </ul>
