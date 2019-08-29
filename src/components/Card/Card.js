@@ -10,10 +10,9 @@ class Card extends Component {
     render() {
         return(
             <section className="Card">
-                <h1>
-                    
-                </h1>
             </section>
         );
     }
 }
+
+export default Card;
