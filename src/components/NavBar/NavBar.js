@@ -3,7 +3,7 @@ import './NavBar.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
 
-const searchFavicon = <FontAwesomeIcon icon={faSearch} />
+const searchFavicon = <FontAwesomeIcon icon={faSearch} color="white" />
 
 
 class NavBar extends Component {
@@ -26,9 +26,13 @@ class NavBar extends Component {
                             <li>Take Quiz</li>
                             <li>Conflict Styles</li>
                             <li>Conflict Types</li>
-                            <li className="Search-Input">
-                                {searchFavicon}
-                                <input type="text" placeholder="Search.." />
+                            <li>
+                                <form className="Search-Input" >
+                                    <input type="text" placeholder="Search.." />
+                                    <button>
+                                    {searchFavicon}
+                                    </button>
+                                </form>
                             </li>
                         </ul>
                     </section>
