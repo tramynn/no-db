@@ -1,0 +1,8 @@
+.NavBar {
+    background-color: none;
+}
+
+.NavBar-Links > ul > li {
+    list-style: none;
+}
+
