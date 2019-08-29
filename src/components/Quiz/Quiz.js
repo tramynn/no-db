@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import Card from '../Card/Card';
+import './Quiz.css';
 
 class Quiz extends Component {
     constructor() {
@@ -11,11 +13,10 @@ class Quiz extends Component {
     }
     render () {
         return(
-            <main className="Quiz">
-                <header className="Quiz-Header">
-                    <h2>Quiz</h2>
-                </header>
-            </main>
+            <section className="Quiz">
+                <h1 className="Quiz-Title">Quiz</h1>
+                <Card />
+            </section>
         );
     }
 }

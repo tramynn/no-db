@@ -34,6 +34,9 @@ li {
     margin: 2vw;
 }
 
+li:hover, button:hover {
+    cursor: pointer;
+}
 form {
     display: inline;
 }

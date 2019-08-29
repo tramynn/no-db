@@ -1,10 +1,17 @@
 .Home {
     color: white;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.Home-Title {
     font-family: Raleway;
     font-style: italic;
     font-weight: bold;
+    font-size: 3vw;
+    text-align: center;
+    margin-top: 40px;
 }
-
-/* .Home-Header {
-    padding: 100px;
-} */

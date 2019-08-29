@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import './Card.css'
+
 
 class Card extends Component {
     constructor() {
@@ -10,6 +12,8 @@ class Card extends Component {
     render() {
         return(
             <section className="Card">
+                <div className="Card-Container">
+                </div>
             </section>
         );
     }
