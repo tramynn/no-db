@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './NavBar.css';
 
+
 class NavBar extends Component {
     constructor() {
         super();
@@ -10,17 +11,24 @@ class NavBar extends Component {
     render() {
         return(
             <section className="NavBar">
-                <section className="NavBar-logo">
-                    <h1>weSolv</h1>
-                </section>
-                <section className="NavBar-Links">
-                    <ul>
-                        <li>Take Quiz</li>
-                        <li>Conflict Styles</li>
-                        <li>Conflict Types</li>
-                        <li>Search</li>
-                    </ul>
-                </section>
+                <div className="NavBar-Left">
+                    <section className="NavBar-Logo">
+                        <h1>weSolv</h1>
+                    </section>
+                </div>
+                <div className="Navbar-Right">
+                    <section className="NavBar-Links">
+                        <ul>
+                            <li>Take Quiz</li>
+                            <li>Conflict Styles</li>
+                            <li>Conflict Types</li>
+                            <button className="Search-Button">
+                                
+                                <li>Search</li>
+                            </button>
+                        </ul>
+                    </section>
+                </div>
             </section>
         );
     }

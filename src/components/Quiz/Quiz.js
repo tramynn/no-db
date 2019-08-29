@@ -12,7 +12,7 @@ class Quiz extends Component {
     render () {
         return(
             <main className="Quiz">
-                <header className="Quiz-header">
+                <header className="Quiz-Header">
                     <h2>Quiz</h2>
                 </header>
             </main>
