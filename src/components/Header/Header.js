@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
-import './NavBar.css';
+import './Header.css';
+import { Navbar, Nav } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
 
 const searchFavicon = <FontAwesomeIcon icon={faSearch} color="white" />
 
 
-class NavBar extends Component {
+class Header extends Component {
     constructor() {
         super();
         this.state = {
@@ -42,4 +43,4 @@ class NavBar extends Component {
     }
 }
 
-export default NavBar;
+export default Header;

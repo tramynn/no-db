@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import NavBar from './components/NavBar/NavBar';
+import Header from './components/Header/Header';
 import Quiz from './components/Quiz/Quiz';
 
 class App extends Component {
@@ -14,7 +14,7 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <NavBar />
+          <Header />
         </header>
         <main>
           <Quiz />
