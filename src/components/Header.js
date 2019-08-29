@@ -24,7 +24,7 @@ class Header extends Component {
                             <li>
                                 <form className="Search-Input" >
                                     <input type="text" placeholder="Search.." />
-                                    <button>
+                                    <button className="Search-Button">
                                     {searchFavicon}
                                     </button>
                                 </form>

@@ -11,7 +11,11 @@ class Home extends Component {
     render() {
         return(
             <section className="Home">
-                <h1 className="Home-Title">Welcome</h1>
+                <main className="Home-Container">
+                    <h1 className="Home-Title">Welcome</h1>
+                    <p className="Home-Text">Transform your conflicts</p>
+                    <button className="Take-Quiz-Button">Take Quiz</button>
+                </main>
             </section>
         );
     }

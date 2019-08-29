@@ -1,6 +1,13 @@
 .Home {
     color: white;
-    background-color: transparent;
+    background-color: #7293AA;
+    display: flex;
+    justify-content: center;
+    /* margin-top: 180px; */
+    height: 90vh;
+}
+
+.Home-Container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -8,10 +15,39 @@
 }
 
 .Home-Title {
+    color: #FFFFFF;
     font-family: Raleway;
-    font-style: italic;
     font-weight: bold;
-    font-size: 3vw;
+    font-size: 8vw;
     text-align: center;
-    margin-top: 40px;
+    margin-bottom: 20px;
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
 }
+
+.Home-Text {
+    font-family: Raleway;
+    font-size: 2rem;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+.Take-Quiz-Button {
+    border-radius: 4px;
+    border: 1px solid #314156;
+    background-color: #314156;
+    color: white;
+    position: relative;
+    font-family: Oswald;
+    font-size: 15px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 10px 10px;
+    /* width: 20%; */
+}
+
+.Take-Quiz-Button:hover {
+    border: 1px solid #FFFFFF;
+    background-color: transparent;
+    color: #FFFFFF;
+}
+
