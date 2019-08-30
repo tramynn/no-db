@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './Card.css'
 import axios from 'axios';
 import CardQuestions from './CardQuestions/CardQuestions';
-
+import Answers from './Answers/Answers'
 
 class Card extends Component {
     constructor() {
@@ -33,7 +33,7 @@ class Card extends Component {
                             <CardQuestions quizQuestions={quizQuestions} />
                         </div>
                         <div className="Card-Right">
-                            
+                            <Answers />
                         </div>
                 </div>
             </section>

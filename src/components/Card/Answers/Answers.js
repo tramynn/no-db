@@ -9,7 +9,6 @@ class Answers extends Component {
         }
     }
 
-
     render() {
         return(
             <section className="Answers">
@@ -18,46 +17,46 @@ class Answers extends Component {
                         placeholder="answer 1"
                     />
                     <input 
-                        placeholder="answer 1"
+                        placeholder="answer 2"
                     />
                     <input 
-                        placeholder="answer 1"
+                        placeholder="answer 3"
                     />
                     <input 
-                        placeholder="answer 1"
+                        placeholder="answer 4"
                     />
                     <input 
-                        placeholder="answer 1"
+                        placeholder="answer 5"
                     />
                     <input 
-                        placeholder="answer 1"
+                        placeholder="answer 6"
                     />
                     <input 
-                        placeholder="answer 1"
+                        placeholder="answer 7"
                     />
                     <input 
-                        placeholder="answer 1"
+                        placeholder="answer 8"
                     />
                     <input 
-                        placeholder="answer 1"
+                        placeholder="answer 9"
                     />
                     <input 
-                        placeholder="answer 1"
+                        placeholder="answer 10"
                     />
                     <input 
-                        placeholder="answer 1"
+                        placeholder="answer 11"
                     />
                     <input 
-                        placeholder="answer 1"
+                        placeholder="answer 12"
                     />
                     <input 
-                        placeholder="answer 1"
+                        placeholder="answer 13"
                     />
                     <input 
-                        placeholder="answer 1"
+                        placeholder="answer 14"
                     />
                     <input 
-                        placeholder="answer 1"
+                        placeholder="answer 15"
                     />
                     <button>Submit</button>
                 </form>
