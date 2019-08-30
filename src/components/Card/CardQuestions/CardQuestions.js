@@ -7,7 +7,7 @@ class CardQuestions extends Component {
             return (
                 <div className="Quiz-Questions-Container" key={index}>
                     <ul>
-                        <li>{question.question}</li>
+                        <li>{question.id}. {question.question}</li>
                     </ul>
                 </div>
             )
