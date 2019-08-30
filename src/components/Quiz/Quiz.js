@@ -14,7 +14,7 @@ class Quiz extends Component {
     render () {
         return(
             <section className="Quiz">
-                <h1 className="Quiz-Title">Quiz</h1>
+                <h1 className="Quiz-Title">quiz</h1>
                 <Card />
             </section>
         );

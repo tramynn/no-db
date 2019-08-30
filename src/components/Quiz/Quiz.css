@@ -1,5 +1,5 @@
 .Quiz {
-    color: white;
+    color: #42245E;
     background-color: transparent;
     display: flex;
     justify-content: center;
@@ -8,10 +8,9 @@
 }
 
 .Quiz-Title {
-    font-family: Raleway;
-    font-style: italic;
+    font-family: LeckerLi One, cursive;
     font-weight: bold;
-    font-size: 3vw;
+    font-size: 3em;
     text-align: center;
     margin-top: 40px;
 }

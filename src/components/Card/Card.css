@@ -1,9 +1,9 @@
 .Card {
-    width: 75vw;
-    height: 70vh;
+    width: 70vw;
+    height: 65vh;
     background-color: #F0F8FF;
-    box-shadow: 10px 10px 100px rgba(0, 0, 0, 0.25);
-    border-radius: 15px;
+    box-shadow: 15px 15px 100px rgba(0, 0, 0, 0.25);
+    /* border-radius: 15px; */
     margin-top: 10px;
     display: flex;
     justify-content: center;
