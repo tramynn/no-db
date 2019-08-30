@@ -7,11 +7,7 @@ class Home extends Component {
         super();
         this.state = {
         }
-        // this.changeSection = this.changeSection.bind(this);
     }
-    // changeSection() {
-    //     this.setState({});
-    // }
     render() {
         return(
             <section className="Home">

@@ -8,7 +8,7 @@
 
 h1 {
     color: white;
-    margin-left: 30px;
+    margin-left: 50px;
     font-family: Francois One;
     font-weight: normal;
     font-size: 4.5vw;
@@ -20,7 +20,7 @@ h1 {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    margin-right: 30px;
+    margin-right: 50px;
 }
 
 li {
@@ -31,7 +31,7 @@ li {
     display: inline;
     justify-content: space-between;
     flex-wrap: row wrap;
-    margin: 2vw;
+    margin: 1.5vw;
 }
 
 li:hover, button:hover {
