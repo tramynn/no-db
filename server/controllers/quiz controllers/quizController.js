@@ -62,23 +62,35 @@ const quizQuestions = [
     }
 ];
 
-// create an empty array to store user answers
 const userAnswers = [];
 
+const displayAnswers = [{
+    mostPreferredStyle: '',
+    leastPreferredStyle: ''
+}]
+
+// create an empty array to store user answers
+const getUserConflictStyle = (req, res) => {
+
+}
 
 // calculate user answers and alert their results
 const calculateResults = (req, res) => {
-
+    //
 }
 
 // grab the quiz questions and render on the card
 const getQuizQuestions = (req, res) => {
     res.status(200).json(quizQuestions);
-
 }
 
-const getAnswers = (req, res) => {
+const addAnswers = (req, res) => {
     userAnswers.push(req.body);
+    res.json(userAnswers);
+}
+
+const deleteAnswers = (req, res) => {
+    userAnswers.splice(+req.params, userAnswers.length);
     res.json(userAnswers);
 }
 
@@ -88,7 +100,9 @@ const getError = (req, res) => {
 
 module.exports = {
     getQuizQuestions,
-    getAnswers,
+    addAnswers,
     calculateResults,
+    getUserConflictStyle,
+    deleteAnswers,
     getError
 }
