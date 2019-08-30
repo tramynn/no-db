@@ -66,19 +66,29 @@ const quizQuestions = [
 const userAnswers = [];
 
 
-//
-const getQuizQuestions = (req, res) => {
-    res.status(200).json(quizQuestions);
+// calculate user answers and alert their results
+const calculateResults = (req, res) => {
+
 }
 
+// grab the quiz questions and render on the card
+const getQuizQuestions = (req, res) => {
+    res.status(200).json(quizQuestions);
+
+}
 
 const getAnswers = (req, res) => {
-    quiz.push(req.body);
+    userAnswers.push(req.body);
     res.json(userAnswers);
 }
 
+const getError = (req, res) => {
+    res.status(400).json(console.log('ERROR'));
+}
 
 module.exports = {
     getQuizQuestions,
-    getAnswers
+    getAnswers,
+    calculateResults,
+    getError
 }

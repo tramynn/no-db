@@ -6,9 +6,6 @@ class Quiz extends Component {
     constructor() {
         super();
         this.state = {
-            questions: [],
-            answers: [],
-            userConflictStyle: ''
         }
     }
     render () {

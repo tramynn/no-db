@@ -35,6 +35,7 @@
 }
 
 .Quiz-Description {
+    line-height: 1.618rem;
     width: 80%;
     height: 50vh;
 }
