@@ -11,8 +11,8 @@ class Home extends Component {
         return(
             <section className="Home">
                 <main className="Home-Container">
-                    <h1 className="Home-Title">Welcome</h1>
-                    <p className="Home-Text">Transform your conflicts</p>
+                    <h1 className="Home-Title">Transform your conflicts</h1>
+                    <p className="Home-Text">Learn about your conflict style and improve your communication skills.</p>
                     <button className="Take-Quiz-Button" onClick={() => this.props.updateDisplay("Quiz")}>Take Quiz</button>
                 </main>
             </section>
