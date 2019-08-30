@@ -24,7 +24,7 @@ class App extends Component {
     return (
       <div className="Dark-Overlay">
         <div className="App">
-            <Header updateDisplay={this.updateDisplay}/>
+            <Header updateDisplay={this.updateDisplay} />
               {this.state.display === "Home" ? <Home updateDisplay={this.updateDisplay} /> : null}
               {this.state.display === "Quiz" ? <Quiz /> : null}
               {this.state.section === "ConflictStyles" ? <ConflictStyles /> : null}

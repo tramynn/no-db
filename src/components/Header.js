@@ -3,7 +3,7 @@ import './Header.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
 
-const searchFavicon = <FontAwesomeIcon icon={faSearch} color="white" />
+const searchFavicon = <FontAwesomeIcon icon={faSearch} color="#37284C" />
 
 class Header extends Component {
     render() {

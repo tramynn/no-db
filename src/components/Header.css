@@ -1,13 +1,12 @@
 .NavBar {
-    color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 10vh;
+    height: 12vh;
 }
 
-h1 {
-    color: white;
+.NavBar-Logo {
+    color: #37284C;
     margin-left: 50px;
     font-family: Francois One;
     font-weight: normal;
@@ -17,6 +16,7 @@ h1 {
 }
 
 .NavBar-Links {
+    color: #37284C;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -41,42 +41,39 @@ form {
     display: inline;
 }
 
-input {
+form {
     border-radius: 4px;
-    border: 1px solid white;
-    color: white;
-    position: relative;
-    background-color: transparent;
-    transition: 0.3s all;
-    font-family: Oswald;
-    font-size: 15px;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
+    border: 1px solid #37284C;
+    transition: 0.4s all;
 }
 
-input:hover {
+form:hover {
     background-color: rgba(255, 255, 255, 0.45);
     box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.05);
 }
 
-.Search-Button {
-    border-radius: 4px;
+input {
     border: none;
-    background-color: #314156;
     color: white;
     position: relative;
-    transition: 0.3s all;
+    background-color: transparent;
     font-family: Oswald;
     font-size: 15px;
     letter-spacing: 0.08em;
     text-transform: uppercase;
 }
 
+.Search-Button {
+    border: none;
+    background-color: transparent;
+    font-size: 16px;
+}
 
 ::placeholder {
-    color: white;
-    font-family: Oswald;
+    color: #37284C;
+    opacity: .8;
+    /* font-family: Oswald;
     font-size: 15px;
     letter-spacing: 0.08em;
-    text-transform: uppercase;
+    text-transform: uppercase; */
 }

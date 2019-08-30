@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './Home.css';
-import Quiz from '../Quiz/Quiz';
 
 class Home extends Component {
     constructor() {
