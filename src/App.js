@@ -22,14 +22,12 @@ class App extends Component {
 
   render() {
     return (
-      <div className="Dark-Overlay">
-        <div className="App">
-            <Header updateDisplay={this.updateDisplay} />
-              {this.state.display === "Home" ? <Home updateDisplay={this.updateDisplay} /> : null}
-              {this.state.display === "Quiz" ? <Quiz /> : null}
-              {this.state.section === "ConflictStyles" ? <ConflictStyles /> : null}
-              {this.state.section === "ConflictTypes" ? <ConflictTypes /> : null}
-        </div>
+      <div className="App">
+          <Header updateDisplay={this.updateDisplay} />
+            {this.state.display === "Home" ? <Home updateDisplay={this.updateDisplay} /> : null}
+            {this.state.display === "Quiz" ? <Quiz /> : null}
+            {this.state.section === "ConflictStyles" ? <ConflictStyles /> : null}
+            {this.state.section === "ConflictTypes" ? <ConflictTypes /> : null}
       </div>
     );
   }
