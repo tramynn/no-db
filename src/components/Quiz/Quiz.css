@@ -1,10 +1,13 @@
 .Quiz {
-    color: #42245E;
-    background-color: transparent;
+    color: white;
+    background: linear-gradient(45deg, #A07AB4 -1.91%, #C6CFE9 100%);
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin-top: -12vh;
+    width: 100vw;
+    height: 200vh;
 }
 
 .Quiz-Title {
@@ -12,5 +15,35 @@
     font-weight: bold;
     font-size: 3em;
     text-align: center;
-    margin-top: 40px;
+    margin-top: 20vh;
+    margin-bottom: 4vh;
+}
+
+
+.Quiz-Description-Container {
+    color: white;
+    background-color: #9E79B3;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.25);
+    font-family: Lato, sans-serif;
+    width: 100%;
+    height: 60vh;
+    font-size: 1rem;
+    margin-bottom: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Quiz-Description {
+    /* display: flex;
+    justify-content: center; */
+    width: 80%;
+    height: 50vh;
+}
+
+.Footer {
+    margin-top: 18px;
+    height: 6vh;
+    font-family: Oswald;
+    font-size: 1rem;
 }
