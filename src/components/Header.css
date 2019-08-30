@@ -37,17 +37,17 @@ li {
 li:hover, button:hover {
     cursor: pointer;
 }
-form {
+.Search-Input {
     display: inline;
 }
 
-form {
+.Search-Input {
     border-radius: 4px;
     border: 1px solid #37284C;
     transition: 0.4s all;
 }
 
-form:hover {
+.Search-Input:hover {
     background-color: rgba(255, 255, 255, 0.45);
     box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.05);
 }

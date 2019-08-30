@@ -80,12 +80,14 @@ const getQuizQuestions = (req, res) => {
     res.status(200).json(quiz);
 }
 
+const userAnswers = [];
 
-const deleteQuizAnswers = (req, res) = {
+const getAnswers = (req, res) => {
     
 }
 
+
 module.exports = {
     getQuizQuestions,
-    deleteQuizAnswers
+    getAnswers
 }
