@@ -3,11 +3,6 @@ import Card from '../Card/Card';
 import './Quiz.css';
 
 class Quiz extends Component {
-    constructor() {
-        super();
-        this.state = {
-        }
-    }
     render () {
         return(
             <section className="Quiz">

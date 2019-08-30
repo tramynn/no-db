@@ -8,13 +8,13 @@ const searchFavicon = <FontAwesomeIcon icon={faSearch} color="#37284C" />
 class Header extends Component {
     render() {
         return(
-            <section className="NavBar">
-                <div className="NavBar-Left">
+            <header className="NavBar">
+                <nav className="NavBar-Left">
                     <section className="NavBar-Logo">
                         <h1>reSolv</h1>
                     </section>
-                </div>
-                <div className="Navbar-Right">
+                </nav>
+                <nav className="Navbar-Right">
                     <section className="NavBar-Links">
                         <ul>
                             <li onClick={ () =>this.props.updateDisplay("Home")}>Home</li>
@@ -31,8 +31,8 @@ class Header extends Component {
                             </li>
                         </ul>
                     </section>
-                </div>
-            </section>
+                </nav>
+            </header>
         );
     }
 }

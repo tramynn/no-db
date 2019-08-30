@@ -9,6 +9,10 @@ class Answers extends Component {
         }
     }
 
+    handleChange = () => {
+        
+    }
+
     render() {
         return(
             <section className="Answers">
