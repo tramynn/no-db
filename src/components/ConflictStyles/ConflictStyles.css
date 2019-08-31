@@ -1,17 +1,31 @@
 .ConflictStyles-Container {
-  
+    display: flex;
+    justify-content: flex-end;
+    width: 100vw;
+    height: 100vh;
 }
 
 .ConflictStyles-Left {
-    background: linear-gradient(45deg, #A07AB4 -1.91%, #C6CFE9 100%);
+    background-color: #742F86;
+    color: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-top: -12vh;
     width: 30vw;
     height: 100vh;
+    position: relative;
+    z-index: 0;
 }
 
 .ConflictStyles-Right {
     background-color: white;
-    margin-top: -12vh;
-    width: 70;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70vw;
     height: 100vh;
+    margin-top: -12vh;
+    position: relative;
+    z-index: 0;
 }
