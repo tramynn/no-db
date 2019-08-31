@@ -12,13 +12,7 @@ function StyleCard(props) {
                     <main className="StyleCard-Main">
                     </main>
                 </div>
-                <div className="StyleCard-Right">
-
-                </div>
             </div>
-            <footer className="StyleCard-Footer">
-
-            </footer>
         </div>
     );
 }

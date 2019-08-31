@@ -15,18 +15,6 @@
     z-index: 0;
 }
 
-.ConflictStyles-Right {
-    background-color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 70vw;
-    height: 100vh;
-    margin-top: -12vh;
-    position: relative;
-    z-index: 0;
-}
-
 .ConflictStyles-Header {
     color: white;
     font-family: Lato, sans-serif;
@@ -34,4 +22,21 @@
     font-weight: bold;
     font-size: 5vw;
     margin-left: 50px;
+}
+
+.ConflictStyles-Right {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 70vw;
+    height: 100vh;
+    margin-top: -12vh;
+    position: relative;
+    z-index: 0;
+}
+
+.Styles-Header {
+    margin-bottom: 50px;
 }
