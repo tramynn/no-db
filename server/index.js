@@ -6,7 +6,7 @@ const app = express();
 app.use(express.json());
 
 app.get("/api/quiz", quizController.getQuizQuestions);
-app.get("/api/conflictstyles", conflictStylesController.getConflictStyles)
+// app.get("/api/conflictstyles", conflictStylesController.getConflictStyles)
 app.post("/api/quiz", quizController.addAnswers);
 app.delete("/api/quiz", quizController.deleteAnswers);
 
