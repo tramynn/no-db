@@ -1,5 +1,5 @@
 import React from 'react';
-import './Style.css'
+import './StyleCard.css'
 
 function StyleCard() {
     return (

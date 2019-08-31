@@ -15,4 +15,4 @@ function ConflictStyles() {
     );
 }
 
-export default StyleCard;
+export default ConflictStyles;
