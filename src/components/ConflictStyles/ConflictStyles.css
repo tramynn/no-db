@@ -6,10 +6,10 @@
 }
 
 .ConflictStyles-Left {
-    background-color: #742F86;
+    background-color: #B990C0;
     color: right;
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
     margin-top: -12vh;
     width: 30vw;
@@ -28,4 +28,13 @@
     margin-top: -12vh;
     position: relative;
     z-index: 0;
+}
+
+.ConflictStyles-Header {
+    color: white;
+    font-family: Lato, sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 5vw;
+    margin-left: 50px;
 }

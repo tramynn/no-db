@@ -8,10 +8,7 @@ class ConflictStyles extends Component {
             <div className="ConflictStyles-Container">
                 <section className="ConflictStyles-Left">
                     <section className="ConflictStyles-Header">
-                        <ul>
-                            <li>Conflict</li>
-                            <li>Types</li>
-                        </ul>
+                        Conflict<br />Styles.
                     </section>
                 </section>
                 <section className="ConflictStyles-Right">
