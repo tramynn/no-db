@@ -3,6 +3,12 @@ import StyleCard from './StyleCard/StyleCard';
 import './ConflictStyles.css';
 
 class ConflictStyles extends Component {
+    constructor() {
+        super();
+        this.state = {
+            section: "Collaborating"
+        }
+    }
     render() {
         return(
             <div className="ConflictStyles-Container">

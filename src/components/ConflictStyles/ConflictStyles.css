@@ -1,15 +1,12 @@
 .ConflictStyles-Container {
     display: flex;
     justify-content: flex-end;
-    width: 100vw;
-    height: 100vh;
 }
 
 .ConflictStyles-Left {
     background-color: #B990C0;
     color: right;
     display: flex;
-    /* justify-content: center; */
     align-items: center;
     margin-top: -12vh;
     width: 30vw;
