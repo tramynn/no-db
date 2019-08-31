@@ -26,8 +26,8 @@ class App extends Component {
           <Header updateDisplay={this.updateDisplay} />
             {this.state.display === "Home" ? <Home updateDisplay={this.updateDisplay} /> : null}
             {this.state.display === "Quiz" ? <Quiz /> : null}
-            {this.state.section === "ConflictStyles" ? <ConflictStyles /> : null}
-            {this.state.section === "ConflictTypes" ? <ConflictTypes /> : null}
+            {this.state.display === "ConflictStyles" ? <ConflictStyles /> : null}
+            {this.state.display === "ConflictTypes" ? <ConflictTypes /> : null}
       </div>
     );
   }

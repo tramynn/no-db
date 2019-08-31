@@ -1,0 +1,17 @@
+.ConflictStyles-Container {
+  
+}
+
+.ConflictStyles-Left {
+    background: linear-gradient(45deg, #A07AB4 -1.91%, #C6CFE9 100%);
+    margin-top: -12vh;
+    width: 30vw;
+    height: 100vh;
+}
+
+.ConflictStyles-Right {
+    background-color: white;
+    margin-top: -12vh;
+    width: 70;
+    height: 100vh;
+}

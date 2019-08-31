@@ -89,10 +89,8 @@ const addAnswers = (req, res) => {
     res.json(userAnswers);
 }
 
-// const editAnswers = (req, )
-
 const deleteAnswers = (req, res) => {
-    userAnswers.splice(+req.params, userAnswers.length);
+    userAnswers = [];
     res.json(userAnswers);
 }
 

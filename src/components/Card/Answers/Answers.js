@@ -10,7 +10,15 @@ class Answers extends Component {
     }
 
     handleChange = () => {
+        this.setState({})
+    }
+
+    handleSubmit = () => {
         
+    }
+
+    resetAnswers = () => {
+        this.setState({ userAnswers: []})
     }
 
     render() {
@@ -62,7 +70,7 @@ class Answers extends Component {
                     <input 
                         placeholder="answer 15"
                     />
-                    <button>Submit</button>
+                    <button onClick={() => this.state.userAnswers}>Submit</button>
                 </form>
             </section>
         );

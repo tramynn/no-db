@@ -3,7 +3,7 @@ import Card from '../Card/Card';
 import './Quiz.css';
 
 class Quiz extends Component {
-    render () {
+    render() {
         return(
             <section className="Quiz">
                 <h1 className="Quiz-Title">Conflict Style Quiz</h1>
