@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import axios from 'axios';
 import './Results.css';
 
 class Results extends Component {
@@ -24,9 +25,12 @@ class Results extends Component {
         const { animal, style, description } = this.state.result;
         return(
             <div className="Results">
-                {animal}
-                {style}
-                {description}
+                <ul>
+                    <li>Your Results:</li>
+                    <li>Your animal is: {animal}</li>
+                    <li>Your conflict style is: {style}</li>
+                    <li>The {animal} {description}</li>
+                </ul>
             </div>
         );
     }

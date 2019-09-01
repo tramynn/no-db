@@ -3,8 +3,8 @@ import axios from 'axios';
 import './Answers.css';
 
 class Answers extends Component {
-    constructor() {
-        super();
+    constructor(props) {
+        super(props);
         this.state = {
             userAnswers: [],
             answer1: "",
@@ -62,6 +62,7 @@ class Answers extends Component {
             .catch(err => {
                 console.log(err);
             });
+            this.props.updateDisplay("Results");
     }
 
     retakeQuiz = () => {

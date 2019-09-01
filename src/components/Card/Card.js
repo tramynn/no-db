@@ -32,7 +32,7 @@ class Card extends Component {
                             <CardQuestions quizQuestions={quizQuestions} />
                         </div>
                         <div className="Card-Right">
-                            <Answers />
+                            <Answers updateDisplay={this.props.updateDisplay} />
                         </div>
                 </div>
             </section>

@@ -87,11 +87,25 @@ let animals = {
         description: ""
     },
     competingStyle: {
-        animal: turtle
+        animal: "Turtle",
+        style: "Avoiding",
+        description: ""
     },
-    avoidingStyle: {},
-    accommodatingStyle: {},
-    compromisingStyle: {}
+    avoidingStyle: {
+        animal: "Shark",
+        style: "Competing",
+        description: ""
+    },
+    accommodatingStyle: {
+        animal: "Teddy Bear",
+        style: "Accommodating",
+        description: ""
+    },
+    compromisingStyle: {
+        animal: "Fox",
+        style: "Compromising",
+        description: ""
+    }
 }
 
 // calculate user answers and alert their results
