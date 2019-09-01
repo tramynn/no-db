@@ -1,7 +1,3 @@
-.Answers {
-    /* height: 100%; */
-}
-
 .Quiz-Answers {
     display: flex;
     justify-content: center;

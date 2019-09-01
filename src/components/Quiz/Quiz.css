@@ -38,12 +38,3 @@
     width: 80%;
     height: 50vh;
 }
-
-.Footer {
-    margin-top: 18px;
-    height: 6vh;
-    font-family: Oswald;
-    font-size: 1rem;
-    letter-spacing: .05rem;
-    text-transform: uppercase;
-}

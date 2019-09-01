@@ -40,3 +40,8 @@
 .Styles-Header {
     margin-bottom: 50px;
 }
+
+.ConflictStyles-Footer {
+    position: absolute;
+    bottom: 0;
+}

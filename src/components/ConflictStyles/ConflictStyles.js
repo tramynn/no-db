@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import StyleCard from './StyleCard/StyleCard';
 import StylesNav from './StylesNav/StylesNav';
+import Footer from '../Footer/Footer';
 import './ConflictStyles.css';
 
 class ConflictStyles extends Component {
@@ -92,6 +93,9 @@ class ConflictStyles extends Component {
                             null
                         }
                     </section>
+                    <div className="ConflictStyles-Footer">
+                        <Footer />
+                    </div>
                 </section>
             </div>
         );

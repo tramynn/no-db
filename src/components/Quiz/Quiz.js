@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Card from '../Card/Card';
+import Footer from '../Footer/Footer';
 import './Quiz.css';
 
 class Quiz extends Component {
@@ -12,7 +13,7 @@ class Quiz extends Component {
                     </section>
                 </div>
                 <Card />
-                <p className="Footer">&#169; Tramy Nguyen</p>
+                <Footer />
             </section>
         );
     }
