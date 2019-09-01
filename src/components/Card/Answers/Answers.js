@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import axios from 'react';
+import axios from 'axios';
 import './Answers.css';
 
 class Answers extends Component {
@@ -21,15 +21,17 @@ class Answers extends Component {
             answer12: "",
             answer13: "",
             answer14: "",
-            answer15: ""
+            answer15: "",
+            err: ""
         }
     }
 
     handleChange = (e) => {
-        this.setState({[e.target.placeholder]: e.target.value})
+        this.setState({[e.target.name]: e.target.value});
     }
 
-    handleSubmit = () => {
+    handleSubmit = (e) => {
+        e.preventDefault();
         axios
             .post("/api/quiz", {
                 answer1: this.state.answer1,
@@ -50,88 +52,119 @@ class Answers extends Component {
             })
             .then(response => {
                 this.setState({userAnswers: response.data});
+                console.log(this.state.userAnswers)
             })
             .catch(err => {
-                console.log(err);
+                this.setState({err: "An error occurred"});
             });
     }
 
-    // resetAnswers = () => {
-    //     axios
-    //         .delete("/api/quiz")
-    //         .then(response => {
-    //             this.setState({ userAnswers: });
-    //         })
-    //         .catch(err => {
-    //             console.log(err);
-    //         });
-    // }
+    retakeQuiz = () => {
+        axios
+            .delete("/api/quiz")
+            .then(response => {
+                this.setState({ userAnswers: response.data});
+            })
+            .catch(err => {
+                this.setState({err: "An error occurred"});
+            });
+    }
 
     render() {
         return(
             <section className="Answers">
-                <form className="Quiz-Answers">
+                <form className="Quiz-Answers" onSubmit={this.handleSubmit}>
                     <input 
+                        name="answer1"
                         onChange={this.handleChange}
                         placeholder="answer 1"
-                    />
-                    <input 
-                        onChange={this.handleChange}
-                        placeholder="answer 2"
-                    />
-                    <input 
-                        onChange={this.handleChange}
-                        placeholder="answer 3"
-                    />
-                    <input 
-                        onChange={this.handleChange}
-                        placeholder="answer 4"
-                    />
-                    <input 
-                        onChange={this.handleChange}
-                        placeholder="answer 5"
-                    />
-                    <input 
-                        onChange={this.handleChange}
-                        placeholder="answer 6"
-                    />
-                    <input 
-                        onChange={this.handleChange}
-                        placeholder="answer 7"
-                    />
-                    <input 
-                        onChange={this.handleChange}
-                        placeholder="answer 8"
+                        value={this.state.answer1}
                     />
                     <input
+                        name="answer2"
+                        onChange={this.handleChange}
+                        placeholder="answer 2"
+                        value={this.state.answer2}
+                    />
+                    <input 
+                        name="answer3"
+                        onChange={this.handleChange}
+                        placeholder="answer 3"
+                        value={this.state.answer3}
+                    />
+                    <input 
+                        name="answer4"
+                        onChange={this.handleChange}
+                        placeholder="answer 4"
+                        value={this.state.answer4}
+                    />
+                    <input 
+                        name="answer5"
+                        onChange={this.handleChange}
+                        placeholder="answer 5"
+                        value={this.state.answer5}
+                    />
+                    <input 
+                        name="answer6"
+                        onChange={this.handleChange}
+                        placeholder="answer 6"
+                        value={this.state.answer6}
+                    />
+                    <input 
+                        name="answer7"
+                        onChange={this.handleChange}
+                        placeholder="answer 7"
+                        value={this.state.answer7}
+                    />
+                    <input 
+                        name="answer8"
+                        onChange={this.handleChange}
+                        placeholder="answer 8"
+                        value={this.state.answer8}
+                    />
+                    <input
+                        name="answer9"
                         onChange={this.handleChange}
                         placeholder="answer 9"
+                        value={this.state.answer9}
                     />
                     <input 
+                        name="answer10"
                         onChange={this.handleChange}
                         placeholder="answer 10"
+                        value={this.state.answer10}
                     />
                     <input 
+                        name="answer11"
                         onChange={this.handleChange}
                         placeholder="answer 11"
+                        value={this.state.answer11}
                     />
                     <input 
+                        name="answer12"
                         onChange={this.handleChange}
                         placeholder="answer 12"
+                        value={this.state.answer12}
                     />
                     <input 
+                        name="answer13"
                         onChange={this.handleChange}
                         placeholder="answer 13"
+                        value={this.state.answer13}
                     />
                     <input 
+                        name="answer14"
                         onChange={this.handleChange}
                         placeholder="answer 14"
+                        value={this.state.answer14}
                     />
                     <input 
+                        name="answer15"
                         onChange={this.handleChange}
                         placeholder="answer 15"
+                        value={this.state.answer15}
                     />
-                    <button onClick={() => this.state.userAnswers}>Submit</button>
+                    <button type="submit">Submit</button>
                 </form>
             </section>
         );
