@@ -29,7 +29,7 @@ class Results extends Component {
                     <li>Your Results:</li>
                     <li>Your animal is: {animal}</li>
                     <li>Your conflict style is: {style}</li>
-                    <li>The {animal} {description}</li>
+                    <li>The {animal} is {description}</li>
                 </ul>
             </div>
         );
