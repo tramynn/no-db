@@ -128,11 +128,11 @@ const getResults = (req, res) => {
         answer15
     } = userAnswers;
 
-    let collaboratingStyle = answer1 + answer5 + answer7;
-    let competingStyle = answer4 + answer9 + answer12;
-    let avoidingStyle = answer6 + answer10 + answer15;
-    let accommodatingStyle = answer3 + answer11 + answer14;
-    let compromisingStyle = answer2 + answer8 + answer13;
+    let collaboratingStyle = Number(answer1) + Number(answer5) + Number(answer7);
+    let competingStyle = Number(answer4) + Number(answer9) + Number(answer12);
+    let avoidingStyle = Number(answer6) + Number(answer10) + Number(answer15);
+    let accommodatingStyle = Number(answer3) + Number(answer11) + Number(answer14);
+    let compromisingStyle = Number(answer2) + Number(answer8) + Number(answer13);
 
     if (collaboratingStyle > competingStyle &&
         collaboratingStyle > avoidingStyle &&
@@ -145,72 +145,37 @@ const getResults = (req, res) => {
                  competingStyle > accommodatingStyle &&
                  competingStyle > compromisingStyle) 
                  {
-                    res.status(200).json(competingStyle);
+                    res.status(200).json(animals.competingStyle);
                  }
         else if (avoidingStyle > collaboratingStyle &&
                 avoidingStyle > competingStyle &&
                 avoidingStyle > accommodatingStyle &&
                 avoidingStyle > compromisingStyle) 
                 {
-                    res.status(200).json(avoidingStyle);
+                    res.status(200).json(animals.avoidingStyle);
                 }
         else if (accommodatingStyle > collaboratingStyle &&
                 accommodatingStyle > competingStyle &&
                 accommodatingStyle > avoidingStyle &&
                 accommodatingStyle > compromisingStyle) 
                 {
-                    res.status(200).json(accommodatingStyle);
+                    res.status(200).json(animals.accommodatingStyle);
                 }
         else if (compromisingStyle > collaboratingStyle &&
                 compromisingStyle > competingStyle &&
                 compromisingStyle > avoidingStyle &&
                 compromisingStyle > accommodatingStyle)
                 {
-                    res.status(200).json(compromisingStyle)
+                    res.status(200).json(animals.compromisingStyle)
                 }
-}
-
+    }
 // grab the quiz questions and render on the card
 const getQuizQuestions = (req, res) => {
     res.status(200).json(quizQuestions);
 }
 
 const addAnswers = (req, res) => {
-    const { 
-        answer1,
-        answer2,
-        answer3,
-        answer4,
-        answer5,
-        answer6,
-        answer7,
-        answer8,
-        answer9,
-        answer10,
-        answer11,
-        answer12,
-        answer13,
-        answer14,
-        answer15
-    } = req.body;
-    let answersObj = {
-        answer1,
-        answer2,
-        answer3,
-        answer4,
-        answer5,
-        answer6,
-        answer7,
-        answer8,
-        answer9,
-        answer10,
-        answer11,
-        answer12,
-        answer13,
-        answer14,
-        answer15
-    }
-    userAnswers.push(answersObj);
+    userAnswers = req.body;
     res.status(200).json(userAnswers);
 }
 

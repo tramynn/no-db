@@ -10,7 +10,7 @@ class Results extends Component {
         }
     }
 
-    getResult = () => {
+    componentDidMount() {
         axios
             .get("/api/result")
             .then(response => {

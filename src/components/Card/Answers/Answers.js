@@ -29,7 +29,7 @@ class Answers extends Component {
         this.setState({[e.target.name]: e.target.value});
         axios
             .put(`/api/quiz/${e.target.name}`, {
-                answer: e.target.value
+                answer: +e.target.value
             })
             .catch(err => {
                 console.log(err);
@@ -58,11 +58,11 @@ class Answers extends Component {
             })
             .then(response => {
                 this.setState({userAnswers: response.data});
+                this.props.updateDisplay("Results");
             })
             .catch(err => {
                 console.log(err);
             });
-            this.props.updateDisplay("Results");
     }
 
     retakeQuiz = () => {

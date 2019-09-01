@@ -12,7 +12,7 @@ class Quiz extends Component {
                     <section className="Quiz-Description">Powder cookie apple pie jelly-o tootsie roll apple pie chocolate cake. Jelly gummies gingerbread chocolate cake caramels dessert tart icing. Dragée chocolate bar candy topping. Topping liquorice carrot cake powder powder dragée. Liquorice marshmallow chocolate. Cotton candy gummi bears pie sugar plum chocolate bar toffee. Liquorice muffin gingerbread fruitcake gingerbread ice cream icing jelly-o dragée. Chocolate cake powder cake pastry chocolate bar dessert chocolate bar. Candy canes sweet roll macaroon bonbon sweet roll dragée sugar plum sugar plum caramels. Halvah chocolate brownie. Ice cream jelly beans fruitcake dragée lollipop jelly-o cotton candy tootsie roll marzipan. Chocolate cake donut dessert soufflé liquorice macaroon danish sesame snaps gingerbread. Marshmallow sesame snaps marzipan croissant cheesecake. Toffee chocolate cake brownie.
                     </section>
                 </div>
-                <Card updateDisplay={this.prop.updateDisplay} />
+                <Card updateDisplay={this.props.updateDisplay} />
                 <Footer />
             </section>
         );
