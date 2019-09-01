@@ -21,13 +21,19 @@ class Answers extends Component {
             answer12: "",
             answer13: "",
             answer14: "",
-            answer15: "",
-            err: ""
+            answer15: ""
         }
     }
 
     handleChange = (e) => {
         this.setState({[e.target.name]: e.target.value});
+        axios
+            .put(`/api/quiz/${e.target.name}`, {
+                answer: e.target.value
+            })
+            .catch(err => {
+                console.log(err);
+            })
     }
 
     handleSubmit = (e) => {
@@ -52,10 +58,9 @@ class Answers extends Component {
             })
             .then(response => {
                 this.setState({userAnswers: response.data});
-                console.log(this.state.userAnswers)
             })
             .catch(err => {
-                this.setState({err: "An error occurred"});
+                console.log(err);
             });
     }
 
@@ -63,10 +68,10 @@ class Answers extends Component {
         axios
             .delete("/api/quiz")
             .then(response => {
-                this.setState({ userAnswers: response.data});
+                this.setState({ userAnswers: response.data });
             })
             .catch(err => {
-                this.setState({err: "An error occurred"});
+                console.log(err);
             });
     }
 

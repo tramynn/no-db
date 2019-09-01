@@ -62,21 +62,49 @@ const quizQuestions = [
     }
 ];
 
-const userAnswers = [];
-
-const displayAnswers = [{
-    mostPreferredStyle: '',
-    leastPreferredStyle: ''
-}]
-
-// create an empty array to store user answers
-const getUserConflictStyle = (req, res) => {
-
+let userAnswers = {
+    answer1: "",
+    answer2: "",
+    answer3: "",
+    answer4: "",
+    answer5: "",
+    answer6: "",
+    answer7: "",
+    answer8: "",
+    answer9: "",
+    answer10: "",
+    answer11: "",
+    answer12: "",
+    answer13: "",
+    answer14: "",
+    answer15: ""
 }
 
 // calculate user answers and alert their results
-const calculateResults = (req, res) => {
-    //
+const getResults = (req, res) => {
+    const { 
+        answer1,
+        answer2,
+        answer3,
+        answer4,
+        answer5,
+        answer6,
+        answer7,
+        answer8,
+        answer9,
+        answer10,
+        answer11,
+        answer12,
+        answer13,
+        answer14,
+        answer15
+    } = userAnswers;
+    let collaboratingStyle = answer1 + answer5 + answer7;
+    let competingStyle = answer4 + answer9 + answer12;
+    let avoidingStyle = answer6 + answer10 + answer15;
+    let accommodating = answer3 + answer11 + answer14;
+
+
 }
 
 // grab the quiz questions and render on the card
@@ -128,10 +156,17 @@ const deleteAnswers = (req, res) => {
     res.status(200).json(userAnswers);
 }
 
+const updateAnswers = (req, res) => {
+    let { name } = req.params;
+    let { answer } = req.body;
+    userAnswers[name] = Number(answer);
+    res.sendStatus(200);
+}
+
 module.exports = {
     getQuizQuestions,
     addAnswers,
-    calculateResults,
-    getUserConflictStyle,
-    deleteAnswers
+    getResults,
+    deleteAnswers,
+    updateAnswers
 }

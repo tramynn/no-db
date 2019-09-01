@@ -1,13 +1,13 @@
 const express = require("express");
 const quizController = require("./controllers/quizController/quizController");
-const conflictStylesController = require("./controllers/conflictStylesController/conflictStylesController");
 const app = express();
 
 app.use(express.json());
 
 app.get("/api/quiz", quizController.getQuizQuestions);
-// app.get("/api/conflictstyles", conflictStylesController.getConflictStyles)
+app.get("/api/result", quizController.getResults);
 app.post("/api/quiz", quizController.addAnswers);
+app.put("/api/quiz/:name", quizController.updateAnswers)
 app.delete("/api/quiz", quizController.deleteAnswers);
 
 const PORT = 3001;
