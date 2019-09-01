@@ -5,7 +5,7 @@ class Results extends Component {
     constructor() {
         super();
         this.state = {
-            result: ""
+            result: {}
         }
     }
 
@@ -21,9 +21,12 @@ class Results extends Component {
     }
 
     render() {
+        const { animal, style, description } = this.state.result;
         return(
             <div className="Results">
-
+                {animal}
+                {style}
+                {description}
             </div>
         );
     }

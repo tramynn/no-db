@@ -80,6 +80,20 @@ let userAnswers = {
     answer15: ""
 }
 
+let animals = {
+    collaboratingStyle: {
+        animal: "Owl",
+        style: "Collaborating",
+        description: ""
+    },
+    competingStyle: {
+        animal: turtle
+    },
+    avoidingStyle: {},
+    accommodatingStyle: {},
+    compromisingStyle: {}
+}
+
 // calculate user answers and alert their results
 const getResults = (req, res) => {
     const { 
@@ -99,12 +113,47 @@ const getResults = (req, res) => {
         answer14,
         answer15
     } = userAnswers;
+
     let collaboratingStyle = answer1 + answer5 + answer7;
     let competingStyle = answer4 + answer9 + answer12;
     let avoidingStyle = answer6 + answer10 + answer15;
-    let accommodating = answer3 + answer11 + answer14;
+    let accommodatingStyle = answer3 + answer11 + answer14;
+    let compromisingStyle = answer2 + answer8 + answer13;
 
-
+    if (collaboratingStyle > competingStyle &&
+        collaboratingStyle > avoidingStyle &&
+        collaboratingStyle > accommodatingStyle &&
+        collaboratingStyle > compromisingStyle) {
+            res.status(200).json(animals.collaboratingStyle);
+        }
+        else if (competingStyle > collaboratingStyle &&
+                 competingStyle > avoidingStyle &&
+                 competingStyle > accommodatingStyle &&
+                 competingStyle > compromisingStyle) 
+                 {
+                    res.status(200).json(competingStyle);
+                 }
+        else if (avoidingStyle > collaboratingStyle &&
+                avoidingStyle > competingStyle &&
+                avoidingStyle > accommodatingStyle &&
+                avoidingStyle > compromisingStyle) 
+                {
+                    res.status(200).json(avoidingStyle);
+                }
+        else if (accommodatingStyle > collaboratingStyle &&
+                accommodatingStyle > competingStyle &&
+                accommodatingStyle > avoidingStyle &&
+                accommodatingStyle > compromisingStyle) 
+                {
+                    res.status(200).json(accommodatingStyle);
+                }
+        else if (compromisingStyle > collaboratingStyle &&
+                compromisingStyle > competingStyle &&
+                compromisingStyle > avoidingStyle &&
+                compromisingStyle > accommodatingStyle)
+                {
+                    res.status(200).json(compromisingStyle)
+                }
 }
 
 // grab the quiz questions and render on the card
