@@ -85,17 +85,47 @@ const getQuizQuestions = (req, res) => {
 }
 
 const addAnswers = (req, res) => {
-    userAnswers.push(req.body);
-    res.json(userAnswers);
+    const { 
+        answer1,
+        answer2,
+        answer3,
+        answer4,
+        answer5,
+        answer6,
+        answer7,
+        answer8,
+        answer9,
+        answer10,
+        answer11,
+        answer12,
+        answer13,
+        answer14,
+        answer15
+    } = req.body;
+    let answersObj = {
+        answer1,
+        answer2,
+        answer3,
+        answer4,
+        answer5,
+        answer6,
+        answer7,
+        answer8,
+        answer9,
+        answer10,
+        answer11,
+        answer12,
+        answer13,
+        answer14,
+        answer15
+    }
+    userAnswers.push(answersObj);
+    res.status(200).json(userAnswers);
 }
 
 const deleteAnswers = (req, res) => {
     userAnswers = [];
-    res.json(userAnswers);
-}
-
-const getError = (req, res) => {
-    res.status(400).json(console.log('ERROR'));
+    res.status(200).json(userAnswers);
 }
 
 module.exports = {
@@ -103,6 +133,5 @@ module.exports = {
     addAnswers,
     calculateResults,
     getUserConflictStyle,
-    deleteAnswers,
-    getError
+    deleteAnswers
 }

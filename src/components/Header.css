@@ -56,13 +56,13 @@ li:hover, button:hover {
 
 input {
     border: none;
-    color: white;
+    color: #37284C;
     position: relative;
     background-color: transparent;
     font-family: Oswald;
     font-size: 15px;
     letter-spacing: 0.08em;
-    text-transform: uppercase;
+    text-transform: lowercase;
 }
 
 .Search-Button {

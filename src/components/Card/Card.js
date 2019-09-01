@@ -8,8 +8,7 @@ class Card extends Component {
     constructor() {
         super();
         this.state = {
-            quizQuestions: [],
-            userConflictStyle: ''
+            quizQuestions: []
         }
     }
 

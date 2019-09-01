@@ -1,0 +1,16 @@
+.Answers {
+    /* height: 100%; */
+}
+
+.Quiz-Answers {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    /* height: 100%; */
+}
+
+.Quiz-Answers > input {
+    box-sizing: border-box;
+    border: solid #37284C 2px;
+    margin: 5px;
+}
