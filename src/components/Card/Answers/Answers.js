@@ -71,7 +71,7 @@ class Answers extends Component {
         axios
             .delete("/api/quiz")
             .then(response => {
-                this.setState({ 
+                this.setState({
                     userAnswers: response.data,
                     answer1: "",
                     answer2: "",
@@ -89,8 +89,15 @@ class Answers extends Component {
                     answer14: "",
                     answer15: ""
                 })
-
             })
+            .catch(err => {
+                console.log(err);
+            });
+    }
+
+    componentDidUpdate() {
+        axios
+            .get("/api/quiz")
             .catch(err => {
                 console.log(err);
             });
