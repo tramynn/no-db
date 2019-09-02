@@ -24,7 +24,7 @@ class Answers extends Component {
             answer15: ""
         }
 
-        this.restartQuiz = this.restartQuiz.bind(this);
+        this.resetQuiz = this.resetQuiz.bind(this);
     }
 
     handleChange = (e) => {
@@ -67,7 +67,7 @@ class Answers extends Component {
             });
     }
 
-    restartQuiz() {
+    resetQuiz() {
         axios
             .delete("/api/quiz")
             .then(response => {
@@ -90,14 +90,6 @@ class Answers extends Component {
                     answer15: ""
                 })
             })
-            .catch(err => {
-                console.log(err);
-            });
-    }
-
-    componentDidUpdate() {
-        axios
-            .get("/api/quiz")
             .catch(err => {
                 console.log(err);
             });
@@ -199,7 +191,7 @@ class Answers extends Component {
                     />
                     <button type="submit">Submit</button>
                 </form>
-                <button onClick={this.restartQuiz}>Restart</button>
+                <button onClick={this.resetQuiz}>Reset Answers</button>
             </section>
         );
     }
