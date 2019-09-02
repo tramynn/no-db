@@ -20,7 +20,8 @@ class Header extends Component {
                             <li onClick={ () =>this.props.updateDisplay("Home")}>Home</li>
                             <li onClick={ () =>this.props.updateDisplay("Quiz")}>Take Quiz</li>
                             <li onClick={ () =>this.props.updateDisplay("ConflictStyles")}>Conflict Styles</li>
-                            <li  onClick={ () =>this.props.updateDisplay("ConflictTypes")}>Conflict Types</li>
+                            <li onClick={ () =>this.props.updateDisplay("ConflictTypes")}>Conflict Types</li>
+                            <li onClick={ () =>this.props.updateDisplay("Results")}>Results</li>
                             <li>
                                 <form className="Search-Input" >
                                     <input type="text" placeholder="Search.." />

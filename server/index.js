@@ -5,8 +5,8 @@ const app = express();
 app.use(express.json());
 
 app.get("/api/quiz", quizController.getQuizQuestions);
-app.get("/api/result", quizController.getResults);
 app.post("/api/quiz", quizController.addAnswers);
+app.get("/api/results", quizController.getResults);
 app.put("/api/quiz/:name", quizController.updateAnswers)
 app.delete("/api/quiz", quizController.deleteAnswers);
 
