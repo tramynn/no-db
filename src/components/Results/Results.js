@@ -6,7 +6,7 @@ class Results extends Component {
     constructor() {
         super();
         this.state = {
-            result: {}
+            result: []
         }
     }
 

@@ -23,6 +23,8 @@ class Answers extends Component {
             answer14: "",
             answer15: ""
         }
+
+        this.restartQuiz = this.restartQuiz.bind(this);
     }
 
     handleChange = (e) => {
@@ -65,11 +67,29 @@ class Answers extends Component {
             });
     }
 
-    retakeQuiz = () => {
+    restartQuiz() {
         axios
             .delete("/api/quiz")
             .then(response => {
-                this.setState({ userAnswers: response.data });
+                this.setState({ 
+                    userAnswers: response.data,
+                    answer1: "",
+                    answer2: "",
+                    answer3: "",
+                    answer4: "",
+                    answer5: "",
+                    answer6: "",
+                    answer7: "",
+                    answer8: "",
+                    answer9: "",
+                    answer10: "",
+                    answer11: "",
+                    answer12: "",
+                    answer13: "",
+                    answer14: "",
+                    answer15: ""
+                })
+
             })
             .catch(err => {
                 console.log(err);
@@ -172,6 +192,7 @@ class Answers extends Component {
                     />
                     <button type="submit">Submit</button>
                 </form>
+                <button onClick={this.restartQuiz}>Restart</button>
             </section>
         );
     }

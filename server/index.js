@@ -10,7 +10,7 @@ app.post("/api/quiz", quizController.addAnswers);
 app.put("/api/quiz/:name", quizController.updateAnswers)
 app.delete("/api/quiz", quizController.deleteAnswers);
 
-const PORT = 3001;
+const PORT = 5225;
 app.listen(PORT, 
     () => console.log(`Listening on PORT: ${PORT}`)
 );
