@@ -1,0 +1,38 @@
+.StyleCard-Container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.StyleCard-Main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 90%;
+  padding: 20px;
+  line-height: 1.618rem;
+  text-align: justify;
+  font-family: Lato, sans-serif;
+}
+
+.StyleCard-Title {
+  color: #5a2369;
+  font-size: 2.5em;
+  font-style: italic;
+  font-weight: bold;
+  line-height: 1em;
+  padding-bottom: 5px;
+}
+
+.StyleCard-Subtitle {
+  color: #5a2369;
+  font-size: 1.2em;
+  padding-bottom: 15px;
+}
+
+.StyleCard-Info {
+  color: grey;
+}

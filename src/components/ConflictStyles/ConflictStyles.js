@@ -33,6 +33,7 @@ class ConflictStyles extends Component {
             <StylesNav updateSection={this.updateSection} />
           </nav>
           <section className="Styles-Container">
+            <div className="Box-Accent"></div>
             {this.state.section === "Collaborating" ? (
               <StyleCard
                 animal="Owl"
