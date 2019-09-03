@@ -1,3 +1,29 @@
 .StylesNav {
-    text-align: center;
+  text-align: center;
+}
+
+.SN {
+  border-radius: 6px;
+  border: 1px solid #742f87;
+  background-color: #742f87;
+  color: white;
+  font-family: Oswald, sans-serif;
+  font-size: 12px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  padding: 10px;
+  margin: 5px;
+  width: 180px;
+  transition: 0.3s;
+  text-align: center;
+}
+
+.SN-Link > li {
+  text-align: center;
+}
+
+.SN:hover {
+  transition: 0.3s;
+  transform: scale(1.1);
+  color: white;
 }
