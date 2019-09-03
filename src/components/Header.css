@@ -25,6 +25,13 @@
   margin-right: 50px;
 }
 
+.Home-Link:hover,
+.Quiz-Link:hover,
+.Styles-Link:hover,
+.Types-Link:hover {
+  color: white;
+}
+
 .NavBar-Links:hover,
 button:hover {
   cursor: pointer;

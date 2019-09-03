@@ -17,14 +17,28 @@ class Header extends Component {
         <nav className="Navbar-Right">
           <section className="NavBar-Links">
             <ul>
-              <li onClick={() => this.props.updateDisplay("Home")}>Home</li>
-              <li onClick={() => this.props.updateDisplay("Quiz")}>
+              <li
+                className="Home-Link"
+                onClick={() => this.props.updateDisplay("Home")}
+              >
+                Home
+              </li>
+              <li
+                className="Quiz-Link"
+                onClick={() => this.props.updateDisplay("Quiz")}
+              >
                 Take Quiz
               </li>
-              <li onClick={() => this.props.updateDisplay("ConflictStyles")}>
+              <li
+                className="Styles-Link"
+                onClick={() => this.props.updateDisplay("ConflictStyles")}
+              >
                 Conflict Styles
               </li>
-              <li onClick={() => this.props.updateDisplay("ConflictTypes")}>
+              <li
+                className="Types-Link"
+                onClick={() => this.props.updateDisplay("ConflictTypes")}
+              >
                 Conflict Types
               </li>
               <li>
