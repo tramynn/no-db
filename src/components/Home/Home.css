@@ -1,58 +1,59 @@
 .Home {
-    color: white;
-    background-color: none;
-    display: flex;
-    justify-content: center;
-    /* margin-top: 180px; */
-    height: 45vh;
+  color: white;
+  display: flex;
+  justify-content: center;
+  height: 50vh;
 }
 
 .Home-Container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .Home-Title {
-    color: #42245E;
-    font-family: LeckerLi One, cursive;
-    font-weight: normal;
-    font-size: 4em;
-    text-align: center;
-    margin-bottom: 30px;
-    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+  color: #42245e;
+  font-family: LeckerLi One, cursive;
+  font-weight: normal;
+  font-size: 4em;
+  text-align: center;
+  margin-bottom: 35px;
+  text-shadow: 0px 4px 4px #8d7b9e;
 }
 
 .Home-Text {
-    color: #732E86;
-    font-family: Lato, sans-serif;
-    font-size: 1rem;
-    margin-bottom: 40px;
+  color: #732e86;
+  font-family: Lato, sans-serif;
+  font-size: 1rem;
+  margin-bottom: 40px;
+  text-align: center;
 }
 
 .Take-Quiz-Button {
-    border-radius: 25px;
-    border: 1px solid #42245E;
-    background-color: #42245E;
-    color: white;
-    position: relative;
-    font-family: Oswald;
-    font-size: 15px;
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
-    padding: 12px;
-    width: 40%;
+  border-radius: 25px;
+  border: 1px solid #42245e;
+  background-color: #42245e;
+  color: white;
+  position: relative;
+  font-family: Oswald, sans-serif;
+  font-size: 15px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  padding: 12px;
+  width: 40%;
+  transition: 0.3s;
 }
 
 .Take-Quiz-Button:hover {
-    border: 1px solid #42245E;
-    background-color: transparent;
-    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
-    color: #42245E;
+  border: 1px solid #54396e;
+  background-color: #54396e;
+  transition: 0.3s;
+  transform: scale(1.1);
+  color: white;
 }
 
 .Home-Footer {
-    position: absolute;
-    bottom: 0;
+  position: absolute;
+  bottom: 0;
 }
