@@ -93,28 +93,23 @@ let userAnswers = {
 let animals = {
   collaboratingStyle: {
     animal: "Owl",
-    style: "Collaborating",
-    description: ""
+    style: "Collaborating"
   },
   competingStyle: {
-    animal: "Turtle",
-    style: "Avoiding",
-    description: ""
+    animal: "Shark",
+    style: "Competing"
   },
   avoidingStyle: {
-    animal: "Shark",
-    style: "Competing",
-    description: ""
+    animal: "Turtle",
+    style: "Avoiding"
   },
   accommodatingStyle: {
     animal: "Teddy Bear",
-    style: "Accommodating",
-    description: ""
+    style: "Accommodating"
   },
   compromisingStyle: {
     animal: "Fox",
-    style: "Compromising",
-    description: ""
+    style: "Compromising"
   }
 };
 

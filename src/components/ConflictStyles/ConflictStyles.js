@@ -44,18 +44,18 @@ class ConflictStyles extends Component {
             ) : null}
             {this.state.section === "Competing" ? (
               <StyleCard
-                animal="Turtle"
+                animal="Shark"
                 name="Competing"
-                info="Turtles tend to value avoiding confrontation more than either their goals or
-                                relationships. They often find it easier to withdraw from a conflict than to face it. This might even include completely giving up relationships or goals that are associated with the conflict."
+                info="Sharks typically value their goals over relationships, meaning that if forced to choose, they would seek to achieve their goals even at the cost of the relationship
+                involved. Sharks are typically more concerned with accomplishing their goals than with being liked by others. They might try to force opponents to accept their solution to the conflict by overpowering them."
               />
             ) : null}
             {this.state.section === "Avoiding" ? (
               <StyleCard
-                animal="Shark"
+                animal="Turtle"
                 name="Avoiding"
-                info="Sharks typically value their goals over relationships, meaning that if forced to choose, they would seek to achieve their goals even at the cost of the relationship
-                                involved. Sharks are typically more concerned with accomplishing their goals than with being liked by others. They might try to force opponents to accept their solution to the conflict by overpowering them."
+                info="Turtles tend to value avoiding confrontation more than either their goals or
+                              relationships. They often find it easier to withdraw from a conflict than to face it. This might even include completely giving up relationships or goals that are associated with the conflict."
               />
             ) : null}
             {this.state.section === "Accommodating" ? (

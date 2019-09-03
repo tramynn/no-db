@@ -23,7 +23,7 @@ class Results extends Component {
   }
 
   render() {
-    const { animal, style, description } = this.state.results;
+    const { animal, style } = this.state.results;
     return (
       <div className="Results">
         <main className="Results-Container">
@@ -35,11 +35,6 @@ class Results extends Component {
               <br />
               <li className="Results-List">Your conflict style is: {style}</li>
               <br />
-              {/* <li className="Results-List">
-                Learn more about {animal}
-                <br />
-                here:
-              </li> */}
             </ul>
           </div>
         </main>

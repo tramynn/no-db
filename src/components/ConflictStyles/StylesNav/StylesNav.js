@@ -15,14 +15,14 @@ class StylesNav extends Component {
             </li>
           </button>
           <button className="SN">
-            <li
-              className="SN-Link"
-              onClick={() => this.props.updateSection("Competing")}
-            >
-              Competing
-            </li>
-          </button>
-          <button className="SN">
+            <button className="SN">
+              <li
+                className="SN-Link"
+                onClick={() => this.props.updateSection("Competing")}
+              >
+                Competing
+              </li>
+            </button>
             <li
               className="SN-Link"
               onClick={() => this.props.updateSection("Avoiding")}
