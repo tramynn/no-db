@@ -23,7 +23,6 @@ class Answers extends Component {
       answer14: "",
       answer15: ""
     };
-
     this.resetQuiz = this.resetQuiz.bind(this);
   }
 
@@ -102,91 +101,91 @@ class Answers extends Component {
           <input
             name="answer1"
             onChange={this.handleChange}
-            placeholder="answer 1"
+            placeholder="Answer 1"
             value={this.state.answer1}
           />
           <input
             name="answer2"
             onChange={this.handleChange}
-            placeholder="answer 2"
+            placeholder="Answer 2"
             value={this.state.answer2}
           />
           <input
             name="answer3"
             onChange={this.handleChange}
-            placeholder="answer 3"
+            placeholder="Answer 3"
             value={this.state.answer3}
           />
           <input
             name="answer4"
             onChange={this.handleChange}
-            placeholder="answer 4"
+            placeholder="Answer 4"
             value={this.state.answer4}
           />
           <input
             name="answer5"
             onChange={this.handleChange}
-            placeholder="answer 5"
+            placeholder="Answer 5"
             value={this.state.answer5}
           />
           <input
             name="answer6"
             onChange={this.handleChange}
-            placeholder="answer 6"
+            placeholder="Answer 6"
             value={this.state.answer6}
           />
           <input
             name="answer7"
             onChange={this.handleChange}
-            placeholder="answer 7"
+            placeholder="Answer 7"
             value={this.state.answer7}
           />
           <input
             name="answer8"
             onChange={this.handleChange}
-            placeholder="answer 8"
+            placeholder="Answer 8"
             value={this.state.answer8}
           />
           <input
             name="answer9"
             onChange={this.handleChange}
-            placeholder="answer 9"
+            placeholder="Answer 9"
             value={this.state.answer9}
           />
           <input
             name="answer10"
             onChange={this.handleChange}
-            placeholder="answer 10"
+            placeholder="Answer 10"
             value={this.state.answer10}
           />
           <input
             name="answer11"
             onChange={this.handleChange}
-            placeholder="answer 11"
+            placeholder="Answer 11"
             value={this.state.answer11}
           />
           <input
             name="answer12"
             onChange={this.handleChange}
-            placeholder="answer 12"
+            placeholder="Answer 12"
             value={this.state.answer12}
           />
           <input
             name="answer13"
             onChange={this.handleChange}
-            placeholder="answer 13"
+            placeholder="Answer 13"
             value={this.state.answer13}
           />
           <input
             name="answer14"
             onChange={this.handleChange}
-            placeholder="answer 14"
+            placeholder="Answer 14"
             value={this.state.answer14}
           />
           <input
             name="answer15"
             onChange={this.handleChange}
-            placeholder="answer 15"
+            placeholder="Answer 15"
             value={this.state.answer15}
           />
           <button type="submit">Submit</button>
