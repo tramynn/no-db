@@ -188,9 +188,17 @@ class Answers extends Component {
             placeholder="Answer 15"
             value={this.state.answer15}
           />
-          <button type="submit">Submit</button>
+          <div className="Submit-Container">
+            <button className="Submit-Button" type="submit">
+              Submit
+            </button>
+          </div>
         </form>
-        <button onClick={this.resetQuiz}>Reset Answers</button>
+        <div className="Reset-Container">
+          <button className="Reset-Button" onClick={this.resetQuiz}>
+            Reset Answers
+          </button>
+        </div>
       </section>
     );
   }

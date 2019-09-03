@@ -5,8 +5,8 @@ class CardQuestions extends Component {
   render() {
     let questionDisplay = this.props.quizQuestions.map((question, index) => {
       return (
-        <div className="Quiz-Questions-Container" key={index}>
-          <ul>
+        <div className="Questions" key={index}>
+          <ul className="Questions-Container">
             <li>
               {question.id}. {question.question}
             </li>
