@@ -26,14 +26,23 @@ class Results extends Component {
     const { animal, style, description } = this.state.results;
     return (
       <div className="Results">
-        <ul>
-          <li>Your Results:</li>
-          <li>Your animal is: {animal}</li>
-          <li>Your conflict style is: {style}</li>
-          <li>
-            The {animal} is {description}
-          </li>
-        </ul>
+        <main className="Results-Container">
+          <div className="Results-Main">
+            <ul>
+              <li className="Results-List">Your Results~</li>
+              <br />
+              <li className="Results-List">Your animal is: {animal}</li>
+              <br />
+              <li className="Results-List">Your conflict style is: {style}</li>
+              <br />
+              {/* <li className="Results-List">
+                Learn more about {animal}
+                <br />
+                here:
+              </li> */}
+            </ul>
+          </div>
+        </main>
       </div>
     );
   }

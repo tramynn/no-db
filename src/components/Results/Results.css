@@ -1,0 +1,32 @@
+.Results {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -12vh;
+  width: 100vw;
+  height: 100vh;
+  background-color: #ba8fc0;
+  text-align: center;
+  line-height: 1.618rem;
+}
+
+.Results-Container {
+  color: #732e86;
+  margin-top: 8vh;
+  height: 40%;
+  width: 50%;
+  background-color: white;
+  border-radius: 10px;
+  box-sizing: border-box;
+  box-shadow: 0px 2px 6px 0px hsla(0, 0%, 0%, 0.4);
+}
+
+.Results-Main {
+  margin-top: 30px;
+  padding: 20px;
+}
+
+.Results-List {
+  font-size: 2em;
+  line-height: 1.618rem;
+}
