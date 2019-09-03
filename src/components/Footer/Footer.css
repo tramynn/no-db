@@ -1,10 +1,11 @@
 .Footer {
-    margin-top: 18px;
-    height: 6vh;
-    font-family: Oswald;
-    font-size: 1rem;
-    letter-spacing: .05rem;
-    text-transform: uppercase;
-    position: relative;
-    bottom: 0;
+  font-family: Oswald, sans-serif;
+  font-size: 1rem;
+  letter-spacing: 0.05rem;
+  text-transform: uppercase;
+  opacity: 0.5;
+  margin-top: 18px;
+  height: 6vh;
+  position: relative;
+  bottom: 0;
 }

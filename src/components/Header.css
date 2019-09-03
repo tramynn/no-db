@@ -1,77 +1,77 @@
 .NavBar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 12vh;
-    position: relative;
-    z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 12vh;
+  position: relative;
+  z-index: 1;
 }
 
 .NavBar-Logo {
-    color: #37284C;
-    margin-left: 50px;
-    font-family: Francois One;
-    font-weight: normal;
-    font-size: 4.5vw;
-    letter-spacing: -2px;
-    text-transform: uppercase;
+  color: #37284c;
+  margin-left: 50px;
+  font-family: Francois One;
+  font-weight: normal;
+  font-size: 4.5vw;
+  letter-spacing: -2px;
+  text-transform: uppercase;
 }
 
 .NavBar-Links {
-    color: #37284C;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    margin-right: 50px;
+  color: #37284c;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 50px;
+}
+
+.NavBar-Links:hover,
+button:hover {
+  cursor: pointer;
 }
 
 li {
-    font-family: Oswald;
-    font-size: 15px;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    display: inline;
-    justify-content: space-between;
-    flex-wrap: row wrap;
-    margin: 1.5vw;
-}
-
-li:hover, button:hover {
-    cursor: pointer;
-}
-.Search-Input {
-    display: inline;
+  font-family: Oswald;
+  font-size: 15px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  display: inline;
+  justify-content: space-between;
+  flex-wrap: row wrap;
+  margin: 1.5vw;
 }
 
 .Search-Input {
-    border-radius: 4px;
-    border: 1px solid #37284C;
-    transition: 0.4s all;
+  display: inline;
+  padding: 4px;
+  border-radius: 4px;
+  border: 1px solid #37284c;
+  transition: 0.4s all;
 }
 
 .Search-Input:hover {
-    background-color: rgba(255, 255, 255, 0.45);
-    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.05);
+  background-color: rgba(255, 255, 255, 0.45);
+  box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.05);
 }
 
 input {
-    border: none;
-    color: #37284C;
-    position: relative;
-    background-color: transparent;
-    font-family: Oswald;
-    font-size: 15px;
-    letter-spacing: 0.08em;
-    text-transform: lowercase;
+  border: none;
+  color: #37284c;
+  position: relative;
+  background-color: transparent;
+  font-family: Oswald;
+  font-size: 15px;
+  letter-spacing: 0.08em;
+  text-transform: lowercase;
 }
 
 .Search-Button {
-    border: none;
-    background-color: transparent;
-    font-size: 16px;
+  border: none;
+  background-color: transparent;
+  font-size: 16px;
 }
 
 ::placeholder {
-    color: #37284C;
-    opacity: .8;
+  color: #37284c;
+  opacity: 0.8;
 }

@@ -169,45 +169,6 @@ const addAnswers = (req, res) => {
   } else {
     console.log("No results");
   }
-
-  // res.json({ userConflictStyle });
-
-  // if (collaboratingStyle > competingStyle &&
-  //     collaboratingStyle > avoidingStyle &&
-  //     collaboratingStyle > accommodatingStyle &&
-  //     collaboratingStyle > compromisingStyle) {
-  //         res.status(200).json(animals.collaboratingStyle);
-  //     } else if (competingStyle > collaboratingStyle &&
-  //              competingStyle > avoidingStyle &&
-  //              competingStyle > accommodatingStyle &&
-  //              competingStyle > compromisingStyle)
-  //              {
-  //                 res.status(200).json(animals.competingStyle);
-  //              }
-  //     else if (avoidingStyle > collaboratingStyle &&
-  //             avoidingStyle > competingStyle &&
-  //             avoidingStyle > accommodatingStyle &&
-  //             avoidingStyle > compromisingStyle)
-  //             {
-  //                 res.status(200).json(animals.avoidingStyle);
-  //             }
-  //     else if (accommodatingStyle > collaboratingStyle &&
-  //             accommodatingStyle > competingStyle &&
-  //             accommodatingStyle > avoidingStyle &&
-  //             accommodatingStyle > compromisingStyle)
-  //             {
-  //                 res.status(200).json(animals.accommodatingStyle);
-  //             }
-  //     else if (compromisingStyle > collaboratingStyle &&
-  //             compromisingStyle > competingStyle &&
-  //             compromisingStyle > avoidingStyle &&
-  //             compromisingStyle > accommodatingStyle)
-  //             {
-  //                 res.status(200).json(animals.compromisingStyle)
-  //             }
-  //     else {
-  //         console.log("No results")
-  //     }
   res.sendStatus(200);
 };
 
