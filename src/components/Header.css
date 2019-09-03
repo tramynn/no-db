@@ -70,6 +70,7 @@ input {
   font-size: 15px;
   letter-spacing: 0.08em;
   text-transform: lowercase;
+  padding: 4px;
 }
 
 .Search-Button {
