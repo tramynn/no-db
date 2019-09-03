@@ -15,9 +15,10 @@ class Quiz extends Component {
             <section className=""></section>
           </section>
         </div>
-        {/* <div className="Quiz-Gradient"></div> */}
         <Card updateDisplay={this.props.updateDisplay} />
-        <Footer />
+        <div className="Quiz-Footer">
+          <Footer />
+        </div>
       </section>
     );
   }

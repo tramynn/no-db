@@ -31,7 +31,7 @@
   text-align: center;
   margin-top: 20vh;
   margin-bottom: 4vh;
-  text-shadow: 0px 2px 2px #8d7b9e;
+  text-shadow: 0px 4px 4px #8d7b9e;
 }
 
 .Quiz-Description {
@@ -40,8 +40,7 @@
   height: 50vh;
 }
 
-.Quiz-Gradient {
-  background: linear-gradient(180deg, #9e79b3 2%, white 100%);
-  width: 100vw;
-  height: 50vh;
+.Quiz-Footer {
+  color: #37284c;
+  margin-top: 15px;
 }
