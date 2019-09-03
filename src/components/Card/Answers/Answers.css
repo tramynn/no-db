@@ -39,6 +39,7 @@
 .Reset-Button {
   border-radius: 4px;
   border: 1px solid #42245e;
+  background-color: white;
   color: #42245e;
   position: relative;
   font-family: Oswald, sans-serif;
