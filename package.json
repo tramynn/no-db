@@ -1,5 +1,5 @@
 {
-  "name": "no-db",
+  "name": "resolv",
   "version": "0.1.0",
   "main": "server/",
   "proxy": "http://localhost:5225",
