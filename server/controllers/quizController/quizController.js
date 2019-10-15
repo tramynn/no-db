@@ -149,10 +149,10 @@ const addAnswers = (req, res) => {
     compromisingStyle
   ];
   let highestNumber = Math.max(...styles);
-  console.log(highestNumber); // 9
+  console.log(highestNumber);
 
   if (highestNumber === collaboratingStyle) {
-    userConflictStyle = animals.compromisingStyle;
+    userConflictStyle = animals.collaboratingStyle;
   } else if (highestNumber === competingStyle) {
     userConflictStyle = animals.competingStyle;
   } else if (highestNumber === avoidingStyle) {
